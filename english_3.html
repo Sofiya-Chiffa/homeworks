@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>IT English Exam Prep | Comprehensive Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background: #f1f5f9;
+            color: #0f172a;
+            line-height: 1.5;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        /* header & navigation */
+        .header {
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: white;
+            padding: 2rem 2rem;
+            border-radius: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 20px 25px -12px rgba(0,0,0,0.2);
+        }
+
+        .header h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            font-size: 1rem;
+            opacity: 0.85;
+            max-width: 700px;
+        }
+
+        .toc {
+            background: white;
+            border-radius: 1.5rem;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px -2px rgba(0,0,0,0.05);
+            border: 1px solid #e2e8f0;
+        }
+
+        .toc h2 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: #0f172a;
+            border-left: 5px solid #3b82f6;
+            padding-left: 1rem;
+        }
+
+        .toc-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        .toc a {
+            background: #f8fafc;
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            text-decoration: none;
+            color: #1e293b;
+            font-weight: 500;
+            font-size: 0.85rem;
+            transition: 0.2s;
+            border: 1px solid #e2e8f0;
+        }
+
+        .toc a:hover {
+            background: #3b82f6;
+            color: white;
+            border-color: #3b82f6;
+            transform: translateY(-2px);
+        }
+
+        .unit-card {
+            background: white;
+            border-radius: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+            transition: all 0.2s;
+        }
+
+        .unit-title {
+            background: #f8fafc;
+            padding: 1.2rem 1.8rem;
+            border-bottom: 2px solid #e2e8f0;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 700;
+            font-size: 1.4rem;
+            color: #0f172a;
+        }
+
+        .unit-title span {
+            font-size: 1.2rem;
+            color: #3b82f6;
+        }
+
+        .unit-content {
+            padding: 1.8rem;
+            display: block;
+        }
+
+        .qa-block {
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #eef2ff;
+            padding-bottom: 1.5rem;
+        }
+
+        .qa-block:last-child {
+            border-bottom: none;
+        }
+
+        .question {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #1e40af;
+            background: #eff6ff;
+            padding: 0.6rem 1rem;
+            border-radius: 1rem;
+            margin-bottom: 0.8rem;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .answer {
+            color: #1e293b;
+            padding-left: 0.5rem;
+            border-left: 3px solid #3b82f6;
+            margin-top: 0.25rem;
+        }
+
+        .answer p {
+            margin-bottom: 0.75rem;
+        }
+
+        .badge {
+            background: #dbeafe;
+            color: #1e40af;
+            font-size: 0.7rem;
+            padding: 0.2rem 0.6rem;
+            border-radius: 1rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-right: 0.5rem;
+        }
+
+        .glossary-note {
+            background: #fefce8;
+            border-left: 5px solid #eab308;
+            padding: 1rem;
+            margin-top: 1rem;
+            border-radius: 1rem;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 2.5rem;
+            color: #475569;
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 700px) {
+            .unit-title {
+                font-size: 1.2rem;
+                padding: 1rem;
+            }
+            .unit-content {
+                padding: 1rem;
+            }
+            .header h1 {
+                font-size: 1.6rem;
+            }
+        }
+        button.copy-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 0.8rem;
+            margin-left: 1rem;
+            color: #64748b;
+        }
+        hr {
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>📘 Essential English for IT Students</h1>
+        <p>Полный сборник ответов на экзаменационные вопросы по учебнику МИРЭА (2023) — интернет, поисковики, языки программирования, веб-дизайн, вредоносное ПО, кибербезопасность и будущее IT.</p>
+        <p>✅ 45 подробных ответов + ключевая терминология</p>
+    </div>
+
+    <!-- Оглавление -->
+    <div class="toc">
+        <h2>📌 Навигация по вопросам</h2>
+        <div class="toc-grid" id="toc-links"></div>
+    </div>
+
+    <!-- Контент будет вставлен сюда -->
+    <div id="answers-container"></div>
+
+    <footer>
+        <p>📖 Источник: Essential English for IT Students. Part 2 (МИРЭА, 2023) | Подготовлено для повторения и сдачи экзамена</p>
+    </footer>
+</div>
+
+<script>
+    // ============================================================
+    // ПОЛНЫЙ МАССИВ ВОПРОСОВ И ОТВЕТОВ (на основе учебника)
+    // ============================================================
+    const qaData = [
+        { unit: "UNIT 1. The Internet", q: "1. What types of wired internet connections do you know? Talk about each in detail.", a: "<strong>DSL (Digital Subscriber Line):</strong> high-speed via telephone lines; uses higher frequency bands; allows simultaneous phone+internet. Asymmetric (ADSL): download faster than upload.<br><strong>Cable Internet:</strong> uses coaxial cable TV infrastructure; reliable but shared bandwidth → peak hours slower.<br><strong>Fiber-optic Internet:</strong> light pulses through glass fibers; binary (light=1, no light=0); extremely fast, low attenuation, no distortion." },
+        { unit: "UNIT 1. The Internet", q: "2. What is the difference between DSL and dial-up connection?", a: "DSL uses high-frequency bands → always on and simultaneous voice+data. Dial-up uses same frequency for voice/data → can't use both at once; requires dialing a number, much slower." },
+        { unit: "UNIT 1. The Internet", q: "3. Talk about three wireless internet access technologies mentioned in the text.", a: "<strong>Wi-Fi:</strong> radio waves, connects devices to router (LAN).<br><strong>Cellular network:</strong> cells with base stations (towers); different frequencies to avoid interference.<br><strong>Satellite Internet:</strong> geostationary satellite; high latency but good for remote areas." },
+        { unit: "UNIT 1. The Internet", q: "4. What are the three types of DSL connections? Talk about each.", a: "<strong>ADSL (Asymmetric):</strong> download speed > upload speed.<br><strong>SDSL (Symmetric):</strong> equal upload/download.<br><strong>VDSL (Very-high-bit-rate):</strong> faster speeds over shorter distances." },
+        { unit: "UNIT 1. The Internet", q: "5. Difference between packet switching and circuit switching?", a: "<strong>Circuit switching:</strong> dedicated channel before communication (telephone); wastes bandwidth.<br><strong>Packet switching:</strong> data split into packets, each can take different path; efficient, used by Internet." },
+        { unit: "UNIT 1. The Internet", q: "6. Two subtypes of packet switching technologies?", a: "<strong>Datagram packet switching:</strong> no dedicated path; packets routed independently; reassembled by sequence number.<br><strong>Virtual circuit switching:</strong> connection-oriented; virtual path established first, then packets sent sequentially." },
+        { unit: "UNIT 1. The Internet", q: "7. Talk about the TCP/IP model (layers, protocols).", a: "<strong>Application layer:</strong> HTTP, FTP, SMTP.<br><strong>Transport layer:</strong> TCP (reliable, acknowledgement) & UDP (real-time, no verification).<br><strong>Internet layer:</strong> IP protocol (addressing & routing).<br><strong>Network Interface layer:</strong> Ethernet, delivers data across physical medium." },
+        { unit: "UNIT 1. The Internet", q: "8. Difference between TCP and UDP?", a: "TCP guarantees delivery via acknowledgement and retransmission; connection-oriented. UDP does not verify connection; used for real-time communication (phone calls, streaming) where speed matters." },
+        { unit: "UNIT 1. The Internet", q: "9. Difference between Internet and WWW?", a: "Internet is global network infrastructure. WWW is information system on top of Internet using URLs, hyperlinks, and browsers; not synonymous." },
+        { unit: "UNIT 2. Search Engines", q: "10. Three types of search engines and their distinctive features.", a: "<strong>Crawler-based:</strong> use spiders to crawl/index/rank automatically (Google).<br><strong>Human-powered directories:</strong> manual submission & editor review (Yahoo Directory).<br><strong>Meta-search engines:</strong> send query to multiple engines, compile results (Dogpile)." },
+        { unit: "UNIT 2. Search Engines", q: "11. Three steps of crawler-based search engine before displaying results.", a: "1) <strong>Crawling:</strong> spider finds new/updated content via links. 2) <strong>Indexing:</strong> store & process info, assign keywords. 3) <strong>Ranking:</strong> order results by relevance using algorithms." },
+        { unit: "UNIT 2. Search Engines", q: "12. What makes meta-search engines different?", a: "They have no own database; they query several search engines simultaneously, remove duplicates, and present combined results." },
+        { unit: "UNIT 2. Search Engines", q: "13. Difference between crawler-based and human-powered directories?", a: "Crawler-based: automatic, uses software. Human-powered: manual review, relies on human editors, description matters, not page content changes." },
+        { unit: "UNIT 2. Search Engines", q: "14. Factors determining higher ranking? What ranking algorithm considers?", a: "Relevance: search term in title, words proximity, backlinks (how many pages link to it). Google's PageRank. Algorithms constantly evolve." },
+        { unit: "UNIT 2. Search Engines", q: "15. Difference between search engine and web browser?", a: "Search engine (remote server) returns list of potential sites. Web browser (local software) decodes URL, sends requests, renders HTML/CSS/JS, shows one website at a time." },
+        { unit: "UNIT 2. Search Engines", q: "16. Four alternative search engines to Google.", a: "<strong>Bing:</strong> rewards, internal tools. <strong>Baidu:</strong> dominant in China, censored. <strong>Yandex:</strong> 60% Russian market, similar services. <strong>Ecosia:</strong> CO₂-neutral, plants trees. <strong>Search Encrypt:</strong> privacy, auto-erases history." },
+        { unit: "UNIT 3. Programming Languages", q: "17. How can programming languages be classified? Examples.", a: "<strong>Low-level:</strong> Machine code (binary), Assembly (mnemonics).<br><strong>High-level:</strong> FORTRAN (science), BASIC (beginners), C (systems), C++ (OOP), Java (cross-platform), Python (readability, AI)." },
+        { unit: "UNIT 3. Programming Languages", q: "18. What is OOP? Three key features?", a: "Object-Oriented Programming bundles data+methods into objects. <strong>Encapsulation:</strong> bundling. <strong>Inheritance:</strong> child class inherits properties. <strong>Polymorphism:</strong> same instruction, different behavior." },
+        { unit: "UNIT 3. Programming Languages", q: "19. Difference between compiler, interpreter, assembler.", a: "Compiler: translates entire high-level code → machine code at once. Interpreter: line-by-line at runtime. Assembler: converts assembly language → machine code." },
+        { unit: "UNIT 4. Web Design", q: "20. Three main tools in web design.", a: "<strong>HTML</strong> – structure via tags.<br><strong>CSS</strong> – styling/layout.<br><strong>JavaScript</strong> – interactivity, behavior (animations, events)." },
+        { unit: "UNIT 4. Web Design", q: "21. Difference between frontend and backend development.", a: "Frontend: visual part users see (HTML/CSS/JS). Backend: server-side logic, databases, APIs (PHP, Python, Java)." },
+        { unit: "UNIT 4. Web Design", q: "22. Advantages and disadvantages of website builders.", a: "Adv: no coding, templates, drag&drop, fast. Disadv: limited customization, restrictions in free plans, often generic, may have vendor lock-in." },
+        { unit: "UNIT 4. Web Design", q: "23. What is SEO? Its main purpose?", a: "Search Engine Optimization – set of improvements to rank higher in SERPs. Purpose: attract organic visitors without paying for ads." },
+        { unit: "UNIT 4. Web Design", q: "24. Difference between on-page SEO and off-page SEO?", a: "On-page: content, keywords, meta tags on your site. Off-page: backlinks, social signals, external promotion." },
+        { unit: "UNIT 4. Web Design", q: "25. What is meant by 'organic results'?", a: "Non-paid search results based on relevance & ranking algorithm, not advertisements." },
+        { unit: "UNIT 5. Malware and Cybercrime", q: "26. What is malware? Types? (details)", a: "<strong>Virus:</strong> infects host, replicates.<br><strong>Worm:</strong> standalone, spreads via network.<br><strong>Trojan:</strong> disguises as legit, does not replicate.<br><strong>Ransomware:</strong> encrypts data, demands payment.<br><strong>Spyware/Keylogger:</strong> steals info/keystrokes.<br><strong>Adware:</strong> unwanted ads.<br><strong>Miner:</strong> hijacks CPU/GPU for crypto." },
+        { unit: "UNIT 5. Malware and Cybercrime", q: "27. Four routines of a virus and their functions.", a: "<strong>Misdirection:</strong> hides virus.<br><strong>Reproduction:</strong> copies to other programs.<br><strong>Trigger:</strong> activates payload.<br><strong>Payload:</strong> does actual damage." },
+        { unit: "UNIT 5. Malware and Cybercrime", q: "28. Types of cybercrime.", a: "Phishing (fake messages), website defacement, salami shaving (tiny thefts), piggybacking (unauthorized Wi-Fi access), software piracy." },
+        { unit: "UNIT 5. Malware and Cybercrime", q: "29. Difference between virus and worm.", a: "Virus needs host activation, attaches to files. Worm is standalone, self-replicates without human intervention, spreads via network." },
+        { unit: "UNIT 5. Malware and Cybercrime", q: "30. Difference between virus and Trojan.", a: "Virus replicates; Trojan does NOT replicate. Trojan appears legitimate but opens backdoor or steals data." },
+        { unit: "UNIT 5. Malware and Cybercrime", q: "31. Difference between DoS and DDoS attack? How DDoS performed?", a: "DoS from single source; DDoS from many compromised devices (botnet). DDoS: attacker uses botnet to overwhelm target with traffic, exhausting resources." },
+        { unit: "UNIT 6. Data Security", q: "32. What is firewall? What can filters be based on?", a: "Firewall protects private network filtering traffic. Filters based on: domain names, IP addresses, certain words/phrases." },
+        { unit: "UNIT 6. Data Security", q: "33. Difference between signature-based and heuristic scanning.", a: "Signature-based matches known malware patterns; cannot detect new malware. Heuristic uses rules/behaviors to detect unknown threats." },
+        { unit: "UNIT 6. Data Security", q: "34. What is a signature?", a: "A unique fingerprint or distinguishing feature of a virus; pattern used by antivirus to identify known malware." },
+        { unit: "UNIT 6. Data Security", q: "35. Two main types of encryption, difference.", a: "<strong>Symmetric:</strong> same key for encrypt/decrypt.<br><strong>Asymmetric (public key):</strong> public key encrypts, private key decrypts." },
+        { unit: "UNIT 6. Data Security", q: "36. Two methods of breaking a cipher.", a: "Brute force (try all keys) and cryptanalysis (exploit cipher weakness)." },
+        { unit: "UNIT 6. Data Security", q: "37. What is CAPTCHA? Where implemented?", a: "Test to distinguish humans from bots (distorted text, image selection). Implemented on login forms, comments, registrations." },
+        { unit: "UNIT 7. The Future of IT", q: "38. What is Turing test? Procedure?", a: "Test if machine can think like human. Judge questions both human and computer; if judge can't reliably tell which is machine (<50% accuracy), machine passes." },
+        { unit: "UNIT 7. The Future of IT", q: "39. Difference between classification and clustering.", a: "Classification: assign to predefined classes. Clustering: group into undefined (natural) categories." },
+        { unit: "UNIT 7. The Future of IT", q: "40. What is backpropagation?", a: "Feedback algorithm that compares actual output with intended output and adjusts connection weights backwards (output→hidden→input) to minimize error." },
+        { unit: "UNIT 7. The Future of IT", q: "41. What is an artificial neural network? Tasks?", a: "Simulation of biological brain with interconnected nodes. Tasks: face recognition, autonomous driving, fraud detection, translation, pattern recognition." },
+        { unit: "UNIT 7. The Future of IT", q: "42. How is ANN similar to biological brain? Structure?", a: "Similar by nodes (neurons) and weighted connections (synapses). Structure: input layer, hidden layers, output layer; fully connected." },
+        { unit: "UNIT 7. The Future of IT", q: "43. Why are neural networks compared to 'black boxes'?", a: "Because user feeds data and gets answers, but internal decision-making process is hidden — we cannot explain exact reasoning." },
+        { unit: "UNIT 7. The Future of IT", q: "44. What is IoT? Major problems?", a: "Internet of Things – physical objects with UIDs transferring data. Problems: security risks, data overload, bug corrupts all devices, no compatibility standard." },
+        { unit: "UNIT 7. The Future of IT", q: "45. What is HLAI? Risks?", a: "Human-Like Artificial Intelligence. Risks: workers lose bargaining power, dependency on tech controllers, less augmentation value (mimicry rather than enhancement)." }
+    ];
+
+    // дополнительные важные определения из глоссария для удобства
+    const extraTerms = {
+        "Firewall": "Сетевой экран, фильтрует трафик.",
+        "Encryption": "Шифрование, преобразование в ciphertext.",
+        "DSL": "Цифровая абонентская линия.",
+        "SEO": "Поисковая оптимизация.",
+        "Backend/Frontend": "Серверная / клиентская часть.",
+        "OOP": "Объектно-ориентированное программирование.",
+        "Malware": "Вредоносное ПО (вирусы, черви, трояны)."
+    };
+
+    // Генерация навигации
+    function buildTOC() {
+        const tocDiv = document.getElementById('toc-links');
+        qaData.forEach((item, idx) => {
+            const link = document.createElement('a');
+            link.href = `#q${idx+1}`;
+            link.textContent = `${idx+1}. ${item.q.substring(0, 50)}...`;
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                document.getElementById(`q${idx+1}`).scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+            tocDiv.appendChild(link);
+        });
+        const extraLink = document.createElement('a');
+        extraLink.href = "#glossary";
+        extraLink.textContent = "📖 Ключевые термины";
+        extraLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            document.getElementById('glossary-section').scrollIntoView({ behavior: 'smooth' });
+        });
+        tocDiv.appendChild(extraLink);
+    }
+
+    // рендер всех карточек
+    function renderContent() {
+        const container = document.getElementById('answers-container');
+        let currentUnit = "";
+        let unitHtml = "";
+
+        qaData.forEach((item, index) => {
+            const qNumber = index+1;
+            if (currentUnit !== item.unit) {
+                if (currentUnit !== "") {
+                    unitHtml += `</div></div>`; // закрыть предыдущий unit
+                }
+                currentUnit = item.unit;
+                unitHtml += `
+                    <div class="unit-card">
+                        <div class="unit-title">
+                            ${currentUnit} <span>📘</span>
+                        </div>
+                        <div class="unit-content" id="unit-${currentUnit.replace(/\s/g, '')}">
+                `;
+            }
+            unitHtml += `
+                <div class="qa-block" id="q${qNumber}">
+                    <div class="question">
+                        <span class="badge">Вопрос ${qNumber}</span> ${item.q}
+                    </div>
+                    <div class="answer">
+                        ${item.a}
+                    </div>
+                </div>
+            `;
+        });
+        // закрыть последний unit
+        if (currentUnit !== "") {
+            unitHtml += `</div></div>`;
+        }
+
+        // добавить блок глоссария и доп. материалов
+        unitHtml += `
+            <div class="unit-card" id="glossary-section">
+                <div class="unit-title">
+                    📚 Полезная терминология & дополнения <span>🧠</span>
+                </div>
+                <div class="unit-content">
+                    <div class="glossary-note">
+                        <strong>⚡ Ключевые термины из учебника:</strong><br>
+                        • <strong>Packet switching</strong> – коммутация пакетов (эффективнее circuit switching).<br>
+                        • <strong>TCP vs UDP</strong> – надёжный vs быстрый.<br>
+                        • <strong>DSL/Cable/Fiber</strong> – основные проводные технологии.<br>
+                        • <strong>Crawler/Indexing/Ranking</strong> – этапы работы поисковика.<br>
+                        • <strong>Compiler/Interpreter/Assembler</strong> – различия трансляции.<br>
+                        • <strong>Encapsulation, Inheritance, Polymorphism</strong> – столпы ООП.<br>
+                        • <strong>Ransomware, Worm, Trojan</strong> – различия вредоносного ПО.<br>
+                        • <strong>Brute force, cryptanalysis</strong> – методы взлома шифров.<br>
+                        • <strong>Backpropagation</strong> – метод обучения нейросетей.<br>
+                        • <strong>IoT, HLAI</strong> – технологии будущего и риски.
+                    </div>
+                    <div class="glossary-note" style="background:#e6f7ec; border-left-color:#10b981;">
+                        💡 <strong>Совет для запоминания:</strong> сравнивайте: circuit vs packet switching; virus vs worm vs trojan; symmetric vs asymmetric encryption; frontend vs backend.
+                        Повторяйте примеры из текста (спутниковый интернет, ADSL, Yandex, Baidu, примеры объектов в ООП).
+                    </div>
+                </div>
+            </div>
+        `;
+
+        container.innerHTML = unitHtml;
+    }
+
+    buildTOC();
+    renderContent();
+</script>
+</body>
+</html>
