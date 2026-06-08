@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конспект для практикума по философии | Розовый гид</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Roboto', 'Georgia', serif;
+            background: #fff5f8;
+            color: #4a2e3b;
+            line-height: 1.5;
+            padding: 2rem 1rem;
+        }
+
+        /* основной контейнер */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #ffffffdd;
+            backdrop-filter: blur(1px);
+            border-radius: 2rem;
+            box-shadow: 0 20px 40px rgba(255, 105, 180, 0.15);
+            overflow: hidden;
+            border: 1px solid #ffe0e7;
+        }
+
+        /* шапка с сердечком */
+        .header {
+            background: linear-gradient(135deg, #ffb7c5, #ff8da1);
+            padding: 2rem 2rem 1.8rem;
+            text-align: center;
+            color: white;
+            border-bottom: 5px solid #ffc0d0;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+            text-shadow: 2px 2px 0 #d46b84;
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            background: #ffdee4a0;
+            display: inline-block;
+            padding: 0.3rem 1.2rem;
+            border-radius: 40px;
+            backdrop-filter: blur(2px);
+        }
+
+        /* меню быстрой навигации */
+        .nav-links {
+            background: #ffeef2;
+            padding: 0.8rem 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            border-bottom: 1px solid #ffd9e2;
+            justify-content: center;
+        }
+
+        .nav-links a {
+            background: #ffdae3;
+            color: #b34e6b;
+            text-decoration: none;
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+            font-weight: 500;
+            font-size: 0.85rem;
+            transition: all 0.2s ease;
+            box-shadow: 0 1px 2px #ffb7c5;
+        }
+
+        .nav-links a:hover {
+            background: #ffb7c5;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* содержание */
+        .content {
+            padding: 2rem 2rem 3rem;
+        }
+
+        /* тематические блоки */
+        .theme-card {
+            background: #fffbfc;
+            border-radius: 1.5rem;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            box-shadow: 0 5px 15px #fcd3df80;
+            border: 1px solid #ffe3ea;
+            transition: 0.1s;
+        }
+
+        .theme-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #cd5b7c;
+            border-left: 8px solid #ff98b2;
+            padding-left: 1rem;
+            margin-bottom: 1rem;
+            margin-top: 0;
+        }
+
+        .subtitle {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #bc6f87;
+            margin: 1.2rem 0 0.8rem 0;
+            background: #fff0f3;
+            display: inline-block;
+            padding: 0.2rem 1rem;
+            border-radius: 30px;
+        }
+
+        .def-box {
+            background: #ffeef3;
+            padding: 0.8rem 1.2rem;
+            border-radius: 1.2rem;
+            margin: 1rem 0;
+            border-left: 6px solid #ff99b4;
+        }
+
+        .important {
+            background: #fff0f2;
+            font-weight: 500;
+            color: #c24366;
+            padding: 0.2rem 0.4rem;
+            border-radius: 12px;
+        }
+
+        ul, .grid-list {
+            margin: 0.6rem 0 0.6rem 1.3rem;
+        }
+
+        li {
+            margin: 0.4rem 0;
+        }
+
+        hr {
+            margin: 1rem 0;
+            border: 0;
+            height: 2px;
+            background: linear-gradient(to right, #ffc0d0, transparent);
+        }
+
+        .keyword {
+            background: #ffe2ea;
+            font-weight: 600;
+            color: #a13e5c;
+            padding: 0.1rem 0.3rem;
+            border-radius: 12px;
+            font-family: monospace;
+        }
+
+        .fun-fact {
+            background: #ffecf0;
+            border-radius: 1rem;
+            padding: 0.8rem 1.2rem;
+            font-style: italic;
+            margin: 1rem 0;
+        }
+
+        footer {
+            background: #ffdee6;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.8rem;
+            color: #b85f7a;
+            border-top: 1px solid #ffcdd9;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>🌸 Философия · конспект-шпаргалка</h1>
+        <p>все понятия, направления и идеи для практикума МИРЭА 2024</p>
+    </div>
+    <div class="nav-links">
+        <a href="#tema1">Тема 1</a>
+        <a href="#tema2">Тема 2</a>
+        <a href="#tema3">Тема 3</a>
+        <a href="#tema4">Тема 4</a>
+        <a href="#tema5">Тема 5</a>
+        <a href="#tema6">Тема 6</a>
+        <a href="#tema7">Тема 7</a>
+        <a href="#tema8">Тема 8</a>
+    </div>
+    <div class="content">
+
+        <!-- ТЕМА 1 -->
+        <div id="tema1" class="theme-card">
+            <div class="theme-title">📖 Тема 1. Предмет, структура, функции философии</div>
+            <div class="def-box"><span class="keyword">📌 Предмет философии</span> — всеобщее в системе «человек – мир».</div>
+            <p><span class="keyword">🌍 Мировоззрение</span> бывает <strong>житейско-практическое</strong> (стихийное, эмоциональное) и <strong>теоретическое</strong> (философия: рациональность, системность).<br>
+            Типы мировоззрения: <em>мифология</em> (образы, антропоморфизм), <em>религия</em> (вера в сверхъестественное), <em>философия</em> (критический разум).</p>
+            <div class="subtitle">📚 Разделы философии (важно!)</div>
+            <ul>
+                <li><span class="keyword">Онтология</span> – учение о бытии, о сущем.</li>
+                <li><span class="keyword">Гносеология</span> (эпистемология) – теория познания.</li>
+                <li><span class="keyword">Антропология</span> – философия человека.</li>
+                <li><span class="keyword">Социальная философия</span> – об обществе.</li>
+                <li><span class="keyword">Аксиология</span> – учение о ценностях (добро, зло, справедливость).</li>
+                <li><span class="keyword">Этика</span> – о морали, нравственности.</li>
+                <li><span class="keyword">Эстетика</span> – о прекрасном, искусстве.</li>
+                <li><span class="keyword">Логика</span> – о формах мышления.</li>
+            </ul>
+            <p><span class="keyword">📌 Основные функции</span>: <strong>гносеологическая</strong> (приращение знаний), <strong>аксиологическая</strong> (ценности), <strong>методологическая</strong>, <strong>критическая</strong>, <strong>прогностическая</strong>.</p>
+            <div class="fun-fact">💡 И. Кант: априори – знание до опыта. Идолы Бэкона: <strong>идолы рода, пещеры, площади, театра</strong> – помехи познанию.</div>
+            <p><span class="keyword">Субстанция</span> – первооснова. <strong>Монизм</strong> (одна субстанция), <strong>дуализм</strong> (две: материя и сознание), <strong>плюрализм</strong> (множество, напр. монады Лейбница).</p>
+            <p><em>Цитата из Бердяева:</em> «Философия человечна, она свободна и не терпит принуждения».</p>
+        </div>
+
+        <!-- ТЕМА 2 -->
+        <div id="tema2" class="theme-card">
+            <div class="theme-title">🏛️ Тема 2. Западная философия (этапы и направления)</div>
+            <p><span class="keyword">Античность:</span> Сократ, Платон (мир идей), Аристотель. Гераклит: «всё течёт» → <strong>диалектика</strong>.<br>
+            <span class="keyword">Средневековье:</span> <strong>теоцентризм</strong> (Бог в центре), Августин, Фома Аквинский.<br>
+            <span class="keyword">Новое время:</span> эмпиризм (Бэкон, Локк) – источник знания – опыт; рационализм (Декарт) – разум.<br>
+            <span class="keyword">Немецкая классика:</span> Кант (категорический императив, априори), Гегель (абсолютный дух, диалектика).<br>
+            <span class="keyword">Марксизм:</span> материалистическое понимание истории: <strong>общественное бытие определяет сознание</strong>.<br>
+            <span class="keyword">Иррационализм XIX–XX вв:</span> Шопенгауэр (мировая воля), Ницше (воля к власти, сверхчеловек), экзистенциализм (Сартр, Ясперс) – проблема подлинного существования, свободы.<br>
+            <span class="keyword">Позитивизм:</span> наука – высшая стадия развития.</p>
+            <div class="def-box">📌 <strong>Хронология для заданий</strong>: Пифагореизм → схоластика → пантеизм → эмпиризм → позитивизм → экзистенциализм.</div>
+            <p><span class="keyword">Гегель:</span> «Всё действительное разумно». Философия – это история мышления, последнее учение – самое развитое.<br>
+            <span class="keyword">Кант:</span> категорический императив – поступай так, чтобы максима твоей воли стала всеобщим законом.</p>
+        </div>
+
+        <!-- ТЕМА 3 -->
+        <div id="tema3" class="theme-card">
+            <div class="theme-title">🇷🇺 Тема 3. Русская философия (XIX–XX вв.)</div>
+            <p><span class="keyword">Центральные темы:</span> духовность, нравственный поиск, смысл истории, соборность.<br>
+            <span class="keyword">Славянофилы</span> (Хомяков, Киреевский): самобытный путь России, <strong>соборность</strong> – свободное единство в любви.<br>
+            <span class="keyword">Западники</span> (Чаадаев): ориентация на европейский путь.<br>
+            <span class="keyword">Н.Я. Данилевский</span> – культурно-исторические типы (цивилизационный подход).<br>
+            <span class="keyword">В.С. Соловьёв</span>: философия всеединства, <strong>София – Мировая душа</strong>, богочеловечество.<br>
+            <span class="keyword">Русский космизм</span> (Вернадский, Фёдоров): <strong>ноосфера</strong> – биосфера, преобразованная научной мыслью и разумом. Человек – геологическая сила.<br>
+            <span class="keyword">Ф.М. Достоевский</span>: «русская идея» – всечеловечность, смирение.<br>
+            <span class="keyword">Н.А. Бердяев</span>: личность есть категория духа, свобода первичнее бытия, персонализм.</p>
+            <div class="fun-fact">✨ «Я стыжусь, следовательно, существую» (В.С. Соловьёв) – акцент на нравственном начале, в отличие от декартовского «мыслю».</div>
+        </div>
+
+        <!-- ТЕМА 4 -->
+        <div id="tema4" class="theme-card">
+            <div class="theme-title">🌌 Тема 4. Философия бытия (онтология)</div>
+            <p><span class="keyword">Бытие</span> – философская категория, обозначающая всё существующее. <strong>Материя</strong> – объективная реальность, дана в ощущениях (Ленин).<br>
+            <span class="keyword">Движение</span> – способ существования материи, несотворимо и неуничтожимо.<br>
+            <span class="keyword">Пространство и время</span> – <strong>субстанциальная концепция</strong> (Ньютон: пустые вместилища) и <strong>реляционная</strong> (Лейбниц, Эйнштейн: зависят от материи).<br>
+            <span class="keyword">Законы диалектики:</span> единство и борьба противоположностей, переход количества в качество (мера → скачок), отрицание отрицания.<br>
+            <span class="keyword">Парменид:</span> «бытие есть, небытия нет». Бытие неподвижно, едино, мыслимо.<br>
+            <span class="keyword">Категории:</span> <strong>система, качество, количество, мера, сущность, явление, реальность, становление.</strong></p>
+            <div class="def-box"><span class="keyword">Закон отрицания отрицания</span> – спираль развития (пример Марка Твена: юность → зрелость → мудрость).</div>
+        </div>
+
+        <!-- ТЕМА 5 -->
+        <div id="tema5" class="theme-card">
+            <div class="theme-title">🧠 Тема 5. Философия познания (гносеология)</div>
+            <p><span class="keyword">Истина</span> – соответствие знания действительности (классическая / корреспондентская). Другие концепции: <strong>когеренция, прагматизм, конвенционализм</strong>.<br>
+            <span class="keyword">Практика</span> – критерий истины.<br>
+            <span class="keyword">Абсолютная истина</span> – полное, исчерпывающее знание (идеал). <strong>Относительная истина</strong> – неполное, изменяющееся знание.<br>
+            <span class="keyword">Формы познания:</span> чувственное (ощущение, восприятие, представление) и рациональное (понятие, суждение, умозаключение).<br>
+            <span class="keyword">Методы:</span> эмпирические (наблюдение, эксперимент, измерение) и теоретические (моделирование, идеализация, формализация).<br>
+            <span class="keyword">К. Поппер – три мира:</span> физический мир, мир состояний сознания, <strong>мир объективного знания</strong> (теории, проблемы, книги).</p>
+            <div class="fun-fact">📖 Бэкон: «Знание – сила». Очищение ума от идолов – путь к объективной истине.</div>
+        </div>
+
+        <!-- ТЕМА 6 -->
+        <div id="tema6" class="theme-card">
+            <div class="theme-title">🔬 Тема 6. Философия науки</div>
+            <p><span class="keyword">Наука</span> – форма деятельности, производящая объективные, достоверные, систематизированные знания.<br>
+            <span class="keyword">Структура научного исследования:</span> научный факт → проблема → гипотеза → теория → закон.<br>
+            <span class="keyword">Научный метод</span> – совокупность приёмов и правил.<br>
+            <span class="keyword">Этос науки (Р. Мертон):</span> универсализм, бескорыстность, организованный скептицизм, коллективизм. <strong>Универсализм</strong> означает: истина не зависит от личных качеств учёного.<br>
+            <span class="keyword">Научная картина мира</span> – целостная система представлений о мире, основанная на достижениях науки. Мировоззрение выполняет роль «цементирующего звена».<br>
+            <span class="keyword">Взаимосвязь эмпирического и теоретического:</span> эмпирия базируется на концептуальной сетке, а теория опирается на факты.</p>
+        </div>
+
+        <!-- ТЕМА 7 -->
+        <div id="tema7" class="theme-card">
+            <div class="theme-title">🧍‍♀️ Тема 7. Философия человека (антропология)</div>
+            <p><span class="keyword">Ключевой вопрос философии</span> – что есть человек? Эпоха <strong>Возрождения</strong> провозгласила гуманизм и антропоцентризм.<br>
+            <span class="keyword">Сущность человека</span> (русские мыслители) – <strong>духовность</strong>, свобода, творчество.<br>
+            <span class="keyword">Этика Канта:</span> автономия воли, категорический императив – относись к человеку всегда как к цели, никогда — только как к средству.<br>
+            <span class="keyword">Индивид</span> – биологическая / социологическая категория (часть рода). <strong>Личность</strong> (Бердяев) – категория духа, целостность, микрокосм. Личностью не рождаются, ею становятся.<br>
+            <span class="keyword">Экзистенциализм</span> (Сартр): существование предшествует сущности. Человек свободен, обречён на свободу, и его свобода неразрывно связана со свободой других.</p>
+            <div class="def-box">📌 Шопенгауэр: самое ценное – личность человека. <em>«Чем больше источников наслаждения человек находит в себе, тем он счастливее»</em>.</div>
+        </div>
+
+        <!-- ТЕМА 8 -->
+        <div id="tema8" class="theme-card">
+            <div class="theme-title">🌐 Тема 8. Социальная философия. Информационное общество</div>
+            <p><span class="keyword">Формационная теория</span> (Маркс): общество проходит этапы – первобытная, рабовладельческая, феодальная, капиталистическая, коммунистическая.<br>
+            <span class="keyword">Цивилизационный подход</span> (Данилевский, Тойнби, Шпенглер): локальные цивилизации, каждая уникальна.<br>
+            <span class="keyword">Типы обществ</span> (по Д. Беллу): <strong>доиндустриальное (традиционное)</strong> – сельское хозяйство, традиции; <strong>индустриальное</strong> – фабрики, наука; <strong>постиндустриальное</strong> – информация, услуги, знания.<br>
+            <span class="keyword">Модернизация</span> – переход от традиционного к индустриальному обществу.<br>
+            <span class="keyword">Реформа</span> – постепенное преобразование; <strong>революция</strong> – коренной переворот.<br>
+            <span class="keyword">Информационное общество (Кастельс)</span>: интернет – ключевая технология, культура свободы, сетевая организация. Люди формируют интернет, а не наоборот.<br>
+            <span class="keyword">Общественный договор</span> (Локк): добровольное соглашение людей для защиты собственности и безопасности, рождает гражданское общество.</p>
+            <div class="fun-fact">🗣️ Платон: «Пока в государствах не будут царствовать философы… государствам не избавиться от зол».</div>
+        </div>
+
+        <!-- БОНУС: термины для таблиц и заданий -->
+        <div class="theme-card" style="background: #fff2f7;">
+            <div class="theme-title">📌 Ключевые термины — обязательно запомнить</div>
+            <ul>
+                <li><strong>Агностицизм</strong> – отрицание познаваемости мира.</li>
+                <li><strong>Сенсуализм</strong> – источник знания – чувства.</li>
+                <li><strong>Рационализм</strong> – разум – главный источник истины.</li>
+                <li><strong>Субстанция</strong> – первооснова всего сущего.</li>
+                <li><strong>Соборность</strong> – единство людей в свободе и любви (славянофилы).</li>
+                <li><strong>Ноосфера</strong> – сфера разума (Вернадский).</li>
+                <li><strong>Категорический императив</strong> – всеобщий нравственный закон Канта.</li>
+                <li><strong>Диалектика</strong> – метод развития через противоречия.</li>
+                <li><strong>Экзистенция</strong> – существование человека как основа его сущности.</li>
+                <li><strong>Объективная истина</strong> – содержание знания, не зависящее от человека.</li>
+                <li><strong>Априорное знание</strong> – знание, полученное до опыта, врождённое.</li>
+            </ul>
+            <hr>
+            <p>💡 <span class="keyword">Как отвечать на вопросы к текстам:</span> всегда опирайся на фрагмент, цитируй автора, связывай с изученными понятиями (например, соловьёвская триада основ нравственности, бердяевская свобода, гегелевская абсолютная идея).</p>
+            <p>🎯 <span class="keyword">Для задания 2.1 (Тема 1):</span> <strong>стихийность, эмоциональность → житейский уровень</strong>; <strong>осознанность, системность → теоретический</strong>.</p>
+            <p>📚 <span class="keyword">Функции философии:</span> мировоззренческая, методологическая, гносеологическая, аксиологическая, критическая, прогностическая, воспитательная.</p>
+        </div>
+
+        <!-- Таблица соответствия (основные философы – идеи) -->
+        <div class="theme-card">
+            <div class="theme-title">📌 Шпаргалка: мыслители → ключевое понятие</div>
+            <ul>
+                <li>📖 Платон – «Мир идей»</li>
+                <li>🧠 Аристотель – Первая философия (метафизика)</li>
+                <li>🕯️ Августин – Теоцентризм, исповедь</li>
+                <li>🔬 Ф. Бэкон – Идолы познания, эмпиризм</li>
+                <li>⚙️ Р. Декарт – Дуализм субстанций, «Cogito ergo sum»</li>
+                <li>📐 И. Кант – Категорический императив, априори</li>
+                <li>🌀 Г.В.Ф. Гегель – Абсолютный дух, диалектика</li>
+                <li>🏭 К. Маркс – Базис и надстройка, формации</li>
+                <li>💪 Ф. Ницше – Воля к власти, сверхчеловек</li>
+                <li>🌍 В.С. Соловьёв – Всеединство, София</li>
+                <li>🌱 В.И. Вернадский – Ноосфера</li>
+                <li>✨ Н.А. Бердяев – Свобода, личность, экзистенция</li>
+                <li>🎭 Ж.-П. Сартр – Существование предшествует сущности</li>
+                <li>📡 М. Кастельс – Информационное общество, интернет-сети</li>
+            </ul>
+        </div>
+
+    </div>
+    <footer>
+        🌸 Конспект составлен по практикуму МИРЭА 2024 (Философия) | Вся информация для успешного выполнения тестов, таблиц и анализа текстов<br>
+        💗 учись с радостью, мысли критически, люби мудрость — философия ждёт тебя!
+    </footer>
+</div>
+</body>
+</html>
